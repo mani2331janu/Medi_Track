@@ -1,0 +1,24 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Package lock (ignore if you don't want to commit exact versions)
+package-lock.json
+uploads
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional: OS generated files
+.DS_Store
+Thumbs.db
+
+# Optional: build folders (if any)
+dist/
+build/

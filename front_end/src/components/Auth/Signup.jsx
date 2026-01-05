@@ -9,6 +9,7 @@ import { notifySuccess, notifyError } from '../../utils/notify';
 
 const Signup = () => {
   const api_url = import.meta.env.VITE_API_URL
+  
 
   const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
@@ -37,7 +38,7 @@ const Signup = () => {
 
   const handleSave = async (data) => {
     try {
-      const res = await axios.post(`${api_url}api/auth/sign-up`, data);
+      const res = await axios.post(`${api_url}api/auth/sign_up`, data);
       notifySuccess(res.data.message || "Registered successfully!");
       navigate("/login");
     } catch (error) {
