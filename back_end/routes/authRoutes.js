@@ -1,11 +1,7 @@
-const express = require("express");
-const { signup,login } = require("../controllers/AuthController/AuthController");
-const PushController = require("../controllers/AuthController/PushController")
+import express from "express";
+import { signUp } from "../controllers/AuthController/loginController.js";
 const router = express.Router();
 
-router.post("/sign_up", signup);
-router.post("/log_in",login)
+router.post("/sign_up",signUp);
 
-router.post("/push/store-token",PushController.storeFcmToken)
-
-module.exports = router;
+export default router;
