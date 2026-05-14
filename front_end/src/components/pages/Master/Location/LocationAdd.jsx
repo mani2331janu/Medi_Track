@@ -15,9 +15,6 @@ const LocationAdd = () => {
     }
 
     // Validation schema
-
-
-    
     const schema = Yup.object().shape({
         location_name: Yup.string().required("Location is required"),
     });
