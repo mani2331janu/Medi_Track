@@ -42,6 +42,7 @@ const Signup = () => {
       notifySuccess(res.data.message || "Registered successfully!");
       navigate("/login");
     } catch (error) {
+      
       notifyError(error.response?.data?.message || "Something went wrong!");
     }
   };

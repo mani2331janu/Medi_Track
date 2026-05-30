@@ -58,7 +58,7 @@ const Header = ({ sidebarWidth = 250, onToggleSidebar }) => {
           {theme === "light" ? <Moon size={18} /> : <Sun size={18} />}
         </button>
 
-        <NotificationBell />
+        {/* <NotificationBell /> */}
         {/* User Dropdown */}
         <div className="relative" ref={dropdownRef}>
           <button

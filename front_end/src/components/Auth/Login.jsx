@@ -37,8 +37,8 @@ const Login = () => {
      
       navigate("/");
     } catch (err) {
-      const message =
-        err.response?.data?.message || "Login failed. Please try again.";
+      
+      const message = err.response?.data?.message || "Login failed. Please try again.";
 
       setErrorMsg(message);
     }

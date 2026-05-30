@@ -6,6 +6,7 @@ export async function up(queryInterface, Sequelize) {
       primaryKey: true,
     },
 
+    user_id: { type: Sequelize.STRING(50), allowNull: true },
     emp_id: { type: Sequelize.STRING(50), allowNull: true },
     emp_name: { type: Sequelize.STRING(100), allowNull: true },
     gender: { type: Sequelize.STRING(10), allowNull: true },
